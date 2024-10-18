@@ -9,12 +9,12 @@ $(document).ready(function(){
 
     $(window).on('load scroll',function(){
         $('.fa-bars').removeClass('fa-times');
-        $('.navbar').removeClassClass('nav-toggle');
+        $('.navbar').removeClass('nav-toggle');
 
-        if($(window).scrollTop()>30){
-            $('header').addClass('header-active')
+        if($(window).scrollTop() > 30){
+            $('header').addClass('header-active');
         }else{
-            $('header').removeClass('header-active')
+            $('header').removeClass('header-active');
         }
     })
 
