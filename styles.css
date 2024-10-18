@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*{
+    font-family: "Kalam", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+body{
+    
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 96%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0, .3);
+    transition: .2s linear;
+    
+}
+header .logo{
+    color: #333;
+    font-size: 3rem;
+}
+header .logo span{
+    color: #0098a1; 
+}
+header .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar ul li{
+    margin: 0 1rem;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #333; 
+    transition: .2s linear;
+}
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+    color: #0098a1;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #0098a1;
+    cursor: pointer;
+    display: none;
+    padding-right: 1rem;
+}
+.header-active{
+    top:0;
+    width: 100%;
+    border-radius: 0;
+}
+/* home section   */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.home .video video{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+/* media quaries  */
+
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+    header .fa-bars{
+        
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: -100rem; left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background: #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .3rem .5rem rgba(0,0,0, .3);
+        transition: .1s linear;
+        z-index: 100;
+        opacity: 0;
+
+    }
+    header .navbar ul{
+        flex-flow: column;
+    }
+    header .navbar ul li{
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .navbar ul li a{
+        display: block;
+        font-size: 3rem;
+    }
+    header .nav-toggle{
+        top: 5.5rem;
+        opacity: 1;
+    }
+}
