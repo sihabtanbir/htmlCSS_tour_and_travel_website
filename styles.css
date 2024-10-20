@@ -445,12 +445,76 @@ header .fa-bars{
    
     padding-top: -2rem;
     font-size: 2rem;
-    height: 4rem;
+    height: 5rem;
+    margin-bottom: 2rem;
 }
 .contact .row .form-container form input[type="submit"]:hover{
     background: #fff;
     color: #0098a1;
     
+}
+.newslatter{
+    padding: 2rem;
+    background: #0098a1;
+    text-align: center;
+}
+.newslatter h1{
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+}
+.newslatter p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 15rem;
+}
+.newslatter input{
+    height: 4rem;
+    font-size: 2rem;
+    padding: 1rem;
+    background: #eee;
+}
+.newslatter input[type="submit"]{
+    padding: 0 1rem;
+    color: #0098a1;
+    background: #fff;
+    box-shadow: 0 .3rem .5rem #000;
+    cursor: pointer;
+}
+.newslatter input[type="submit"]:hover{
+    color:#333;
+    background: #eee;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #333;
+}
+footer .credit{
+    font-size: 2rem;
+    color: #fff;
+}
+footer .credit span{
+    font-size: 2rem;
+    color: #0098a1;
+}
+footer .icons a{
+    font-size: 2rem;
+    margin: 0 .5rem;
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    border: .2rem solid #0098a1;
+    line-height: 3.5rem;
+    transition: .2s linear;
+}
+footer .icons a:hover{
+    color: #0098a1;
+    border: .2rem solid #fff;
 }
 
 
@@ -553,6 +617,10 @@ header .fa-bars{
     .contact .form-container{
         width: 90%;
         margin: 0 auto;
+    }
+    footer{
+        flex-flow: column;
+        text-align: center;
     }
 
 }
