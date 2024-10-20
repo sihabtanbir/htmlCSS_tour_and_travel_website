@@ -336,8 +336,55 @@ header .fa-bars{
 .gallery .box-container .box .icons a:hover{
     color: #0098a1;
 }
+/* review section  */
+.review{
+    background: #0098a1;
+    
 
+}
+.review span{
+    color: #fff;
+}
+.review .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 
+}
+.review .box-container .box{
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 .3rem .5rem #000;
+    background: #fff;
+
+}
+.review .box-container .box .image{
+    margin-top: -6rem;
+}
+.review .box-container .box .image img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid #eee;
+}
+.review .box-container .box .content h3{
+    font-size: 3rem;
+    color: #0098a1;
+}
+.review .box-container .box .content p{
+    font-size: 1.4rem;
+    color: #333;
+    padding: 1rem;
+}
+.review .box-container .box .content .stars i{
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
 
 
 
