@@ -339,6 +339,8 @@ header .fa-bars{
 /* review section  */
 .review{
     background: #0098a1;
+    padding-top: 10rem;
+    min-height: 100vh;
     
 
 }
@@ -386,6 +388,70 @@ header .fa-bars{
     padding: 1rem .1rem;
 }
 
+/* contact section  */
+
+.contact .row{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contact .row .contact-info .box{
+    margin: 4rrem 2rem;
+}
+.contact .row .contact-info .box h3{
+    font-size: 2rem;
+    color: #333;
+}
+.contact .row .contact-info .box h3 i{
+    color: #0098a1;
+}
+
+.contact .row .contact-info .box p{
+    font-size: 1.7rem;
+    padding-left: 3rem;
+    color: #aaa;
+}
+
+.contact .row .form-container{
+    width: 50%;
+}
+.contact .row .form-container h3{
+    font-size: 4rem;
+    padding-top: 4rem;
+    color: #0098a1;
+}
+.contact .row .form-container form input{
+    outline: none;
+    border: .2rem solid #0098a1;
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    font-size: 1.8em;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.contact .row .form-container form textarea{
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.contact .row .form-container form input[type="submit"]{
+    background: #0098a1;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+   
+    padding-top: -2rem;
+    font-size: 2rem;
+    height: 4rem;
+}
+.contact .row .form-container form input[type="submit"]:hover{
+    background: #fff;
+    color: #0098a1;
+    
+}
 
 
 
@@ -479,6 +545,14 @@ header .fa-bars{
     }
     .home .form-container form input[type="submit"]{
         width: 100%;
+    }
+    .contact .row{
+        flex-flow: column;
+        align-items: center;
+    }
+    .contact .form-container{
+        width: 90%;
+        margin: 0 auto;
     }
 
 }
